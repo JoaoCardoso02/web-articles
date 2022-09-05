@@ -21,18 +21,19 @@ export const Content = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 8px;
+	gap: 6px;
 	margin-left: 12px;
+	color: #363636;
 `
 
 export const Name = styled.h3`
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 500;
 	margin: 0;
 `
 
 export const Date = styled.span`
-	font-size: 8px;
+	font-size: 12px;
 	font-weight: 300;
 	margin: 0;
 `
