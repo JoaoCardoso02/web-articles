@@ -27,12 +27,14 @@ export const Content = styled.div`
 `
 
 export const Name = styled.h3`
+	font-family: 'Inter';
 	font-size: 16px;
 	font-weight: 500;
 	margin: 0;
 `
 
 export const Date = styled.span`
+	font-family: 'Inter';
 	font-size: 12px;
 	font-weight: 300;
 	margin: 0;

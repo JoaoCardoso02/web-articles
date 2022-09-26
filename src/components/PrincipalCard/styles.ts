@@ -18,6 +18,7 @@ export const Title = styled.h2`
 	font-weight: 700;
 	margin-bottom: 24px;
 	color: #363636;
+	font-family: 'Inter';
 `
 
 export const ImagePrincipalCardWrap = styled.span`

@@ -27,6 +27,7 @@ export const Title = styled.h3`
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 12px;
+	font-family: 'Inter';
 	color: #363636;
 `
 

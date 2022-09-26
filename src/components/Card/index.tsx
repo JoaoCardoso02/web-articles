@@ -32,7 +32,7 @@ export default function Card(props: ICardProps) {
 						{props.title}
 					</Title>
 				</TitleContent>
-				<Author {...props.author} style={{ marginTop: 12 }} />
+				<Author {...props.author} style={{ marginTop: 16 }} />
 			</CardContent>
 		</Container>
 	)
