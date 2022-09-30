@@ -12,7 +12,6 @@ export const Container = styled.div`
 
 export const TitleContent = styled.div`
 	line-height: 29px;
-	height: calc(29px * 2);;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
