@@ -1,7 +1,8 @@
 import React from 'react'
 import Author from 'components/Author'
 import Image from 'next/image'
-import { Container, Title, TitleContent, CardContent, ImageCardWrap } from 'components/Card/styles'
+import { Container, Title, TitleContent, CardContent, ImageCardWrap } from 'src/components/Card/styles'
+import Chip from '../Chip'
 
 interface ICardProps {
 	title: string
@@ -33,6 +34,7 @@ export default function Card(props: ICardProps) {
 					</Title>
 				</TitleContent>
 				<Author {...props.author} style={{ marginTop: 16 }} />
+				<Chip style={{ marginTop: 12 }}>Video maker</Chip>
 			</CardContent>
 		</Container>
 	)
