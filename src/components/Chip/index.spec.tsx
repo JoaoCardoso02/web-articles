@@ -18,8 +18,10 @@ const renderComponent = (children?: React.ReactNode) => {
 
 describe('Chip', () => {
 	it('should find its children successfully', () => {
-		const { baseElement } = renderComponent(FakeChildren)
+		const { getByText, container } = renderComponent(FakeChildren())
 
-    expect(baseElement).toBeTruthy();
+		const elementChildrenText = getByText('my fake children')
+
+    expect(elementChildrenText).toBeInTheDocument();
 	});
 })
