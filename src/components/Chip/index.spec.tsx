@@ -1,3 +1,4 @@
+import 'jest-styled-components'
 import React, { CSSProperties } from "react";
 import { render } from "@testing-library/react";
 import Chip from ".";
@@ -18,10 +19,18 @@ const renderComponent = (children?: React.ReactNode) => {
 
 describe('Chip', () => {
 	it('should find its children successfully', () => {
-		const { getByText, container } = renderComponent(FakeChildren())
+		const { getByText } = renderComponent(FakeChildren())
 
 		const elementChildrenText = getByText('my fake children')
 
     expect(elementChildrenText).toBeInTheDocument();
+	});
+
+	it('should have color style for button element', () => {
+		const { container } = renderComponent(FakeChildren())
+
+		const elementButton = container.querySelector('button')
+
+    expect(elementButton).toHaveStyleRule('color: red')
 	});
 })
