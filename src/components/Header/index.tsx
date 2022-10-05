@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header as Hd, Nav, Ul, Li } from './styles'
+import { Header as Hd, Nav, Ul, Li, Span } from './styles'
 
 export interface IHeaderProps {}
 
@@ -9,13 +9,13 @@ export default function Header(props: IHeaderProps) {
 			<Nav>
 				<Ul>
 					<Li>
-						Home
+						<Span>Home</Span>
 					</Li>
 					<Li>
-						Last Articles
+						<Span>Last Articles</Span>
 					</Li>
 					<Li>
-						Discover
+						<Span>Discover</Span>
 					</Li>
 				</Ul>
 			</Nav>
