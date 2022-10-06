@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Card from 'src/components/Card'
+import Header from 'src/components/Header'
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,8 @@ const Home: NextPage = () => {
         <title>Articles</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Header />
 
       <main style={{ width: '100%', display: 'flex', justifyContent: 'center'}}>
 				<Card
