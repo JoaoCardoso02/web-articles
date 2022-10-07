@@ -1,13 +1,11 @@
 import React from 'react'
 import { Header as Hd, Nav, Ul, Li, Span } from './styles'
 
-export interface IHeaderProps {}
-
-export default function Header(props: IHeaderProps) {
+export default function Header() {
 	return (
-		<Hd>
+		<Hd data-testid="header">
 			<Nav>
-				<Ul>
+				<Ul data-testid="header__listing">
 					<Li>
 						<Span>Home</Span>
 					</Li>
