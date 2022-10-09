@@ -14,7 +14,13 @@ const Home: NextPage = () => {
 
       <SvgBackground />
       <main
-        style={{ width: "100%", display: "flex", justifyContent: "center" }}
+        style={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          gap: 48,
+          marginTop: 72
+        }}
       >
         <PrincipalCard
           author={{
@@ -34,6 +40,7 @@ const Home: NextPage = () => {
             }}
             title='Using Photoshop to improve photos'
             image='https://images.unsplash.com/photo-1662228733856-9d74f97804a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80'
+            style={{ marginBottom: 12 }}
           />
           <Card
             author={{
@@ -43,6 +50,7 @@ const Home: NextPage = () => {
             }}
             title='How to improve your photos using your cellphone'
             image='https://images.unsplash.com/photo-1662228733856-9d74f97804a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80'
+            style={{ marginBottom: 12 }}
           />
           <Card
             author={{

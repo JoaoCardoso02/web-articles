@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 import Author from 'components/Author'
 import Image from 'next/image'
 import { Container, Title, TitleContent, CardContent, ImageCardWrap } from 'src/components/Card/styles'
@@ -12,11 +12,12 @@ interface ICardProps {
 		date: string
 		image: string
 	}
+	style?: CSSProperties | undefined
 }
 
 export default function Card(props: ICardProps) {
 	return (
-		<Container>
+		<Container style={props.style}>
 			<ImageCardWrap>
 				<Image
 					src={props.image}
