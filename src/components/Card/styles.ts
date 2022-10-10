@@ -11,7 +11,6 @@ export const Container = styled.div`
 `
 
 export const TitleContent = styled.div`
-	line-height: 29px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -20,12 +19,12 @@ export const TitleContent = styled.div`
 `;
 
 export const Title = styled.h3`
-	line-height: 29px;
+	min-height: 53px;
+	line-height: 26.5px;
 	height: 2.5rem;
 	margin: 0;
 	font-size: 24px;
 	font-weight: 600;
-	margin-bottom: 12px;
 	font-family: 'Inter';
 	color: #363636;
 `
