@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           display: 'flex',
           justifyContent: 'center',
           gap: 48,
-          marginTop: 72
+          marginTop: 112
         }}
       >
         <PrincipalCard

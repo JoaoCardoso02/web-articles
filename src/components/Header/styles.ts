@@ -9,8 +9,9 @@ export const Header = styled.header`
 export const Nav = styled.nav`
 	width: 80vw;
 	height: 64px;
-	max-width: 420px;
-	background-color: #FDFDFD;
+	max-width: 360px;
+	display: flex;
+	justify-content: center;
 `;
 
 export const Ul = styled.ul`
@@ -26,23 +27,17 @@ export const Ul = styled.ul`
 `;
 
 export const Li = styled.li`
-	text-align: center;
-	align-items: center;
-
-	max-width: 120px;
+	max-width: 32px;
 	width: 100%;
 
-	cursor: pointer;
-`;
-
-export const Span = styled.span`
-	height: 100%;
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	font-size: 16px;
-	font-family: Inter;
-	font-weight: 600;
+	svg {
+		font-size: 32px;
+		fill: #363636;
+		cursor: pointer;
+	}
+
 `;

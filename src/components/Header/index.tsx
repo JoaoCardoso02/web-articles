@@ -1,5 +1,6 @@
 import React from 'react'
-import { Header as Hd, Nav, Ul, Li, Span } from './styles'
+import { AiOutlineBell, AiOutlineCompass, AiOutlineFire } from 'react-icons/ai'
+import { Header as Hd, Nav, Ul, Li } from './styles'
 
 export default function Header() {
 	return (
@@ -7,13 +8,13 @@ export default function Header() {
 			<Nav>
 				<Ul data-testid="header__listing">
 					<Li>
-						<Span>Home</Span>
+						<AiOutlineFire />
 					</Li>
 					<Li>
-						<Span>Last Articles</Span>
+						<AiOutlineCompass />
 					</Li>
 					<Li>
-						<Span>Discover</Span>
+						<AiOutlineBell />
 					</Li>
 				</Ul>
 			</Nav>
