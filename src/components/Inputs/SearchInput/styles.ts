@@ -16,7 +16,7 @@ export const InputSearchContainer = styled.div`
 export const SearchInput = styled.input`
 	background: transparent;
 	width: 100%;
-	height: 32px;
+	height: 36px;
 	outline: none;
 	border: none;
 	line-height: 20px;

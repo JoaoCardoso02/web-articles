@@ -1,23 +1,30 @@
 import React from 'react'
-import { AiOutlineBell, AiOutlineCompass, AiOutlineFire } from 'react-icons/ai'
+import { AiFillBell, AiFillFire, AiFillCompass } from 'react-icons/ai'
 import { Header as Hd, Nav, Ul, Li } from './styles'
+import SearchInput from '../Inputs/SearchInput'
 
 export default function Header() {
 	return (
 		<Hd data-testid="header">
-			<Nav>
-				<Ul data-testid="header__listing">
-					<Li>
-						<AiOutlineFire />
-					</Li>
-					<Li>
-						<AiOutlineCompass />
-					</Li>
-					<Li>
-						<AiOutlineBell />
-					</Li>
-				</Ul>
-			</Nav>
+			<div className="header--left">
+				<AiFillCompass />
+				<SearchInput />
+			</div>
+			<div className="header--right">
+				<Nav>
+					<Ul data-testid="header__listing">
+						<Li>
+							<AiFillFire />
+						</Li>
+						<Li>
+							<AiFillCompass />
+						</Li>
+						<Li>
+							<AiFillBell />
+						</Li>
+					</Ul>
+				</Nav>
+			</div>
 		</Hd>
 	)
 }

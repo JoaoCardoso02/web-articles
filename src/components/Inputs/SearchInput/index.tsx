@@ -16,7 +16,10 @@ export default function SearchInput(props: ISearchInputProps) {
 	}
 
 	return (
-		<InputSearchContainer data-testid="input-search__container">
+		<InputSearchContainer
+			data-testid="input-search__container"
+			className="input-search__container"
+		>
 			<AiOutlineSearch />
 			<Input
 				type="text"
