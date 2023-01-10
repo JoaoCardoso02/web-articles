@@ -5,11 +5,9 @@ export const Header = styled.header`
 	justify-content: space-between;
 	padding: 12px;
 
-	border-bottom: 1px solid #C4C4C4;
-
 	svg {
 		font-size: 40px;
-		fill: #363636;
+		fill: #DDDDDD;
 		cursor: pointer;
 	}
 
@@ -53,7 +51,7 @@ export const Li = styled.li`
 	align-items: center;
 
 	svg {
-		stroke: #363636;
+		stroke: #DDDDDD;
 		stroke-width: 40px;
 		fill: transparent;
 	}

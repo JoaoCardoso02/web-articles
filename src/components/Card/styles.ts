@@ -4,9 +4,9 @@ export const Container = styled.div`
 	height: 180px;
 	width: 414px;
 	padding: 12px;
-	border: 1px solid #363636;
+	border: 1px solid #5a5a5a;
 	border-radius: 8px;
-	background-color: #FDFDFD;
+	background-color: #393939;
 	display: flex;
 `
 
@@ -26,7 +26,7 @@ export const Title = styled.h3`
 	font-size: 24px;
 	font-weight: 600;
 	font-family: 'Inter';
-	color: #363636;
+	color: #DDDDDD;
 `
 
 export const ImageCardWrap = styled.span`

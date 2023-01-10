@@ -5,9 +5,9 @@ export const Container = styled.div`
 	width: 416px;
 	padding: 12px;
 	padding-top: 24px;
-	border: 1px solid #363636;
+	border: 1px solid #5a5a5a;
 	border-radius: 8px;
-	background-color: #FDFDFD;
+	background-color: #393939;
 	display: flex;
   flex-flow: column;
 `
@@ -17,7 +17,7 @@ export const Title = styled.h2`
 	font-size: 32px;
 	font-weight: 700;
 	margin-bottom: 24px;
-	color: #363636;
+	color: #DDDDDD;
 	font-family: 'Inter';
 `
 
@@ -29,7 +29,7 @@ export const ImagePrincipalCardWrap = styled.span`
 	margin-top: 24px;
 
   & span {
-		border: 1px solid #363636 !important;
+		border: 1px solid #DDDDDD !important;
 		border-radius: 8px;
 		width: 100% !important;
 		height: 100% !important;

@@ -10,7 +10,7 @@ export const ImageAuthorWrap = styled.div`
 	height: 48px;
 
 	& span {
-		border: 1px solid #363636 !important;
+		border: 1px solid #DDDDDD !important;
 		border-radius: 100%;
 		width: 100% !important;
 		height: 100% !important;
@@ -23,7 +23,7 @@ export const Content = styled.div`
 	justify-content: center;
 	gap: 6px;
 	margin-left: 12px;
-	color: #363636;
+	color: #DDDDDD;
 `
 
 export const Name = styled.h3`
