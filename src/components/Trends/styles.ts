@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TrendsContainer = styled.div`
-	text-align: center;
+	margin: 0 180px;
 
 	> h1 {
 		margin-bottom: 56px

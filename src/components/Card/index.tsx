@@ -1,11 +1,12 @@
 import React, { CSSProperties } from 'react'
 import Author from 'components/Author'
 import Image from 'next/image'
-import { Container, Title, TitleContent, CardContent, ImageCardWrap } from 'src/components/Card/styles'
+import { Container, Title, TitleContent, CardContent, ImageCardWrap, DescriptionContent, Description } from 'src/components/Card/styles'
 import Chip from '../Chip'
 
 interface ICardProps {
 	title: string
+	description: string
 	image: string
 	author: {
 		name: string
@@ -33,6 +34,11 @@ export default function Card(props: ICardProps) {
 						{props.title}
 					</Title>
 				</TitleContent>
+				<DescriptionContent>
+					<Description>
+						{props.description}
+					</Description>
+				</DescriptionContent>
 				<Author {...props.author} style={{ marginTop: 16 }} />
 				<Chip style={{ marginTop: 12 }}>Video maker</Chip>
 			</CardContent>

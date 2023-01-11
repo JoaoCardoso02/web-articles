@@ -10,6 +10,7 @@ jest.mock('../../components/Author', () => {
 
 const props = {
 	title: "Card Title",
+	description: 'Some description about my card',
 	image: '/cardphoto.avif',
 	author: {
 		name: "Michael Scott",
@@ -22,34 +23,36 @@ const renderComponent = () => {
 	return render(
 		<Card {...props} />
 	);
-} 
+}
 
 describe("Card Component", () => {
-  test("should find title and image in document", () => {
-    const { getByText, getByAltText } = renderComponent()
+	test("should find title, description and image in document", () => {
+		const { getByText, getByAltText } = renderComponent()
 
 		const elementTitle = getByText(props.title)
+		const elementDescription = getByText(props.description)
 		const elementImage = getByAltText(`${props.title} image`)
 
-    expect(elementTitle).toBeInTheDocument();
-    expect(elementImage).toBeInTheDocument();
-  });
+		expect(elementTitle).toBeInTheDocument();
+		expect(elementDescription).toBeInTheDocument();
+		expect(elementImage).toBeInTheDocument();
+	});
 
 	test("should find objectFit params equals cover for Image component", async () => {
-    const { getByAltText } = renderComponent()
+		const { getByAltText } = renderComponent()
 
 		const elementImage = getByAltText(`${props.title} image`)
 
 
 		expect(elementImage).toHaveStyle({ 'object-fit': 'cover' })
-  });
+	});
 
 	test("should have src property in Image component", async () => {
-    const { getByAltText } = renderComponent()
+		const { getByAltText } = renderComponent()
 
 		const elementImage = getByAltText(`${props.title} image`)
 
 
 		expect(elementImage).toHaveProperty('src')
-  });
+	});
 });
