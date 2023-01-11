@@ -59,6 +59,12 @@ export const ImageCardWrap = styled.span`
   }
 `;
 
+export const CardFooter = styled.div`
+	margin-top: 48px;
+	display: flex;
+	align-items: center;
+`;
+
 export const CardContent = styled.div`
 	margin-left: 72px;
 	width: 61.5%;
