@@ -16,7 +16,7 @@ export const Header = styled.header`
 		align-items: center;
 
 		.input-search__container {
-			margin-left: 16px;
+			margin-left: 24px;
 		}
 	}
 

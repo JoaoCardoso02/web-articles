@@ -28,6 +28,7 @@ export default function SearchInput(props: ISearchInputProps) {
 				onBlur={props.onBlur}
 				onFocus={props.onFocus}
 				onKeyDown={handleKeyDown}
+				placeholder="Search..."
 			/>
 		</InputSearchContainer>
 	)
